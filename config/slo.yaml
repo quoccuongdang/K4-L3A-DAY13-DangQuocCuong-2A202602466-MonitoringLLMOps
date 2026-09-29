@@ -7,7 +7,7 @@ primary_slo:
     total_event: 'event == "request_received"'
   target_percent: 99.5
   error_budget_percent: 0.5
-  note: Học viên phải giải thích hoặc điều chỉnh ngưỡng bằng baseline của mình.
+  note: Dựa trên baseline (latency P95 bình thường khoảng 400-700ms), ngưỡng 3000ms phản ánh trải nghiệm người dùng chấp nhận được và phát hiện kịp thời các sự cố nghẽn mạng/RAG chậm. Error budget cho phép tối đa 0.5% request vi phạm hoặc thất bại trong chu kỳ 28 ngày.
 guardrails:
   error_rate_pct_max: 2
   daily_cost_usd_max: 2.5
